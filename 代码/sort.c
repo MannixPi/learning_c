@@ -1,8 +1,9 @@
 #include<stdio.h>
 
 void Swap(int *a, int *b);
-void InsertSort(int *array, int length);
 void ShowArray(int *array, int length);
+
+void InsertSort(int *array, int length);
 
 int main(void)
 {
@@ -15,14 +16,6 @@ int main(void)
     printf("排序后: \n");
     ShowArray(a, 10);
     return 0;
-}
-
-// 交换两数
-void Swap(int *a, int *b)
-{
-    int temp = *a;
-    *a = *b;
-    *b = temp;
 }
 
 /*
@@ -58,4 +51,12 @@ void ShowArray(int *array, int length)
         printf("%d ", array[i]);
     }
     printf("\n");
+}
+
+// 交换两数
+void Swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
